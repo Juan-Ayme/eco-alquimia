@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Leaf, Globe2, Users2, ArrowDownCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from 'next/image';
 
 
 export default function Home() {
@@ -38,12 +37,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center">
         <div className="absolute inset-0">
-        <Image
+        <img
             src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Fondo principal"
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
